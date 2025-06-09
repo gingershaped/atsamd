@@ -97,6 +97,7 @@ impl Pins {
         let dotstar = Dotstar {
             ci: self.dotstar_ci,
             di: self.dotstar_di,
+            nc: self.dotstar_nc,
         };
 
         let stemma = STEMMA {
@@ -227,6 +228,7 @@ pub struct Audio {
 pub struct Dotstar {
     pub ci: Pb2<Input<Floating>>,
     pub di: Pb3<Input<Floating>>,
+    pub nc: Pa0<Input<Floating>>,
 }
 
 /// STEMMA JST pins
