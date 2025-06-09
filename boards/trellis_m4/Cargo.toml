@@ -33,6 +33,10 @@ default-features = false
 version = "0.1"
 optional = true
 
+[dependencies.usb-device]
+version = "0.3.1"
+optional = true
+
 [dev-dependencies]
 panic-halt = "0.2"
 panic-semihosting = "0.5"
@@ -45,6 +49,7 @@ version = "0.3"
 # ask the HAL to enable atsamd51g support
 default = ["rt", "atsamd-hal/samd51g"]
 rt = ["cortex-m-rt", "atsamd-hal/samd51g-rt"]
+usb = ["atsamd-hal/usb", "usb-device"]
 unproven = ["atsamd-hal/unproven"]
 keypad-unproven = ["keypad", "unproven"]
 
