@@ -73,6 +73,8 @@ define_pins!(
     pin dotstar_ci = b2,
     /// APA102 (RGB LED control) MOSI
     pin dotstar_di = b3,
+    // Dummy pin for bit-banging APA102 SPI
+    pin dotstar_nc = a0
 );
 
 impl Pins {
